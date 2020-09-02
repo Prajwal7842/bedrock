@@ -826,3 +826,13 @@ def firefox_welcome_page1(request):
 
     return l10n_utils.render(request, template_name, context,
                              ftl_files='firefox/welcome/page1')
+
+
+def firefox_unfck(request):
+    template_name = 'firefox/campaign/unfck/index.html'
+
+    ctx = {
+        'active_locales': ['de', 'en-US']
+    }
+
+    return l10n_utils.render(request, template_name, ctx)

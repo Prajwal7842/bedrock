@@ -741,6 +741,12 @@
         "css/firefox/unfck.scss"
       ],
       "name": "firefox-unfck"
+    },
+    {
+      "files": [
+        "css/firefox/unfck.de.scss"
+      ],
+      "name": "firefox-unfck-de"
     }
   ],
   "js": [
@@ -1379,6 +1385,12 @@
         "js/firefox/campaign/unfck.js"
       ],
       "name": "firefox-unfck"
+    },
+    {
+      "files": [
+        "js/firefox/campaign/unfck.de.js"
+      ],
+      "name": "firefox-unfck-de"
     }
   ]
 }

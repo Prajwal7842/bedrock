@@ -1,3 +1,5 @@
+user-agent:Twitterbot
+disallow:
 user-agent: LinkChecker
 disallow:
 crawl-delay: 1

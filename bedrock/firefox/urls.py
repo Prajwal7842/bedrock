@@ -175,7 +175,7 @@ urlpatterns = (
 
 if settings.DEV:
     urlpatterns += (
-        page('firefox/unfck', 'firefox/campaign/unfck/index.html'),
+        url('^firefox/unfck/$', views.firefox_unfck, name='firefox.unfck.index'),
     )
 else:
     urlpatterns += (
