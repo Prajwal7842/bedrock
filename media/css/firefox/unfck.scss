@@ -135,7 +135,7 @@ main {
 .c-banner {
     @include at2x('/media/img/firefox/campaign/unfck/hero-wide.png', contain);
     margin: 0 auto 48px auto;
-    max-width: $content-xl;
+    max-width: $content-lg;
     position: relative;
     top: $v-grid-xs;
     z-index: 3;
