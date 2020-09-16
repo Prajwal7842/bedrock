@@ -108,7 +108,7 @@
 
   <p style="text-align: center;"><a class="js-twitter-share" target="_blank" rel="noopener noreferrer" href="{{ tw }}"><span class="c-item-icon twitter"></span><span class="c-item-text">Share this fcking shit to Twitter</span></a></p>
 
-  <div class="mzp-l-content mzp-t-content-xl">
+  <div class="mzp-l-content mzp-t-content-xl c-cards">
     <div class="mzp-l-card-third">
       {{ card(
         title='Here’s how Firefox unfcks the internet',
@@ -142,6 +142,20 @@
     </div>
   </div>
 
+  <div class="mzp-l-content mzp-t-content-xl">
+    <div class="c-box">
+      <div class="c-box-text">
+        <h2>GIF a fck</h2>
+        <p>Do you have feelings about the internet? Chances are we’ve got a GIF for that.</p>
+        <a href="" class="mzp-c-button mzp-t-product">Get Giphy With It</a>
+      </div>
+      <div class="c-box-gifs">
+        <img class="c-box-gif" src="{{ static('img/firefox/campaign/unfck/mug.gif') }}" loading="lazy" width="344" height="344">
+        <img class="c-box-gif" src="{{ static('img/firefox/campaign/unfck/smiley.gif') }}" loading="lazy" width="344" height="344">
+        <img class="c-box-gif" src="{{ static('img/firefox/campaign/unfck/todo.gif') }}" loading="lazy" width="344" height="344">
+      </div>
+    </div>
+  </div>
 
 </main>
 {% endblock %}

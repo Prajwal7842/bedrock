@@ -101,7 +101,7 @@ main {
     }
 
     .fx-privacy-link {
-        display: none;
+        display: none; //TODO
     }
 
     .mzp-c-cta-link {
@@ -307,9 +307,49 @@ main {
 }
 
 // --------------------------------------------------------------------------
+// giphy box
+
+.c-box {
+    @include clearfix();
+    border-radius: $border-radius-md;
+    border: 1px solid $color-violet-50;
+    padding: $layout-lg;
+    text-align: center;
+}
+
+.c-box-gifs {
+    margin-top: $layout-sm;
+}
+
+.c-box-gif {
+    float: left;
+    margin-left: $layout-sm;
+    max-width: calc(33.3% - #{$layout-sm * 2 / 3});
+
+      &:first-child {
+        margin-left: 0;
+    }
+}
+
+@supports (display:grid) {
+    @media #{$mq-md} {
+        .c-box {
+            @include grid-column-gap($h-grid-md);
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            text-align: left;
+        }
+    }
+}
+
+// --------------------------------------------------------------------------
 // cards
 // https://github.com/mozilla/protocol/issues/536
 // https://github.com/mozilla/bedrock/pull/9096
+
+.mzp-l-content.c-cards {
+    padding-bottom: 0;
+}
 
 .mzp-c-card {
     background-color: transparent;
