@@ -174,9 +174,11 @@ urlpatterns = (
 
 if settings.DEV:
     urlpatterns += (
-        page('firefox/unfck', 'firefox/campaign/unfck/index.html'),
+        page('firefox/unfck', 'firefox/campaign/unfck/index.html', active_locales=['de', 'en-US']),
     )
 else:
     urlpatterns += (
         redirect(r'^firefox/unfck(/.*)?', 'firefox', permanent=False),
+        redirect(r'^firefox/unfuck(/.*)?', 'firefox', permanent=False),
+        redirect(r'^firefox/love(/.*)?', 'firefox', permanent=False),
     )
